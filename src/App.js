@@ -3,6 +3,9 @@ import MenuBar from './Components/MenuBar/MenuBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import Products from './Components/Products/Products';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function App() {
   const [productNumber, setProductNumber] = useState(0);
