@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 
 function InfoModal(props) {
-    console.log(props)
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -10,7 +9,7 @@ function InfoModal(props) {
 
     return (
         <>
-            <Button variant="info" onClick={handleShow}>
+            <Button className='btn btn-primary mx-2' variant="info" onClick={handleShow}>
                 Info
             </Button>
 
